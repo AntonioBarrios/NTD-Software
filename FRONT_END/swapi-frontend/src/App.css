@@ -1,0 +1,40 @@
+.app-container {
+  min-height: 100vh;
+}
+
+.sidebar-col {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: sticky;
+  top: 20px;
+}
+
+.journal-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+.journal-card .list-group-item {
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+}
+
+.table {
+  font-family: 'Courier New', monospace;
+}
+
+.table th {
+  background-color: #343a40;
+  color: white;
+}
+
+.summary-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}

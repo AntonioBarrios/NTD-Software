@@ -39,11 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'planetas',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -68,6 +70,15 @@ TEMPLATES = [
         },
     },
 ]
+# Permite todas las solicitudes desde localhost:3000 (React)
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+
+# Si necesitas permitir cookies/tokens en las peticiones (opcional)
+CORS_ALLOW_CREDENTIALS = True
+
 
 WSGI_APPLICATION = 'swapi_crud.wsgi.application'
 
